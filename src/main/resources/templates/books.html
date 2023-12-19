@@ -1,0 +1,19 @@
+<html>
+<head><title>Home Page</title></head>
+<body>
+<h1>Hello !</h1>
+<p>Welcome to <span th:text="${app2}">Our App</span></p>
+
+<table>
+      <tr>
+        <th>TITLE</th>
+        <th>AUTHOR</th>
+      </tr>
+      <tr th:each="book : ${books}">
+        <td th:text="${book.title}">Onions</td>
+        <td th:text="${book.author}">2.41</td>
+      </tr>
+    </table>
+
+</body>
+</html>
